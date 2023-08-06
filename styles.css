@@ -60,13 +60,12 @@ body {
  background: #1fe9df;
     border-radius: 2%;
     color: #000000;
-    size: 100px;
-    padding: 12px;
+    padding: 15px;
   
     text-align: end;
     margin-bottom: 10px;
     font-size: 25px;
-    width: 90%;
+    width: 88%;
    
     text-align: left;
   }
