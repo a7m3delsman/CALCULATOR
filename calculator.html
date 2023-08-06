@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="calcicon.ico">
+    <meta thhp-equiv="X-UA-Compatible" content="IE=edge ,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+
+  <div class="calculator">
+    <h1 title="Calculator">Calculator</h1>
+    <input title="result" type="text" size="100" id="display" disabled>
+    <div class="buttons">
+      <button title="clear all" class="clear" onclick="clearDisplay(); playClickSound()">C</button>
+      <button class="numbers" onclick="appendToDisplay('1'); playClickSound()">1</button>
+      <button class="numbers" onclick="appendToDisplay('2'); playClickSound()">2</button>
+      <button class="numbers" onclick="appendToDisplay('3'); playClickSound()">3</button>
+      <button title="minus" onclick="appendToDisplay('-'); playClickSound()">-</button>
+      <button class="numbers" onclick="appendToDisplay('4'); playClickSound()">4</button>
+      <button class="numbers" onclick="appendToDisplay('5'); playClickSound()">5</button>
+      <button class="numbers" onclick="appendToDisplay('6'); playClickSound()">6</button>
+      <button title="portion" onclick="appendToDisplay('/'); playClickSound()">/</button>
+      <button class="numbers" onclick="appendToDisplay('7'); playClickSound()">7</button>
+      <button class="numbers" onclick="appendToDisplay('8'); playClickSound()">8</button>
+      <button class="numbers" onclick="appendToDisplay('9'); playClickSound()">9</button>
+      <button title="multiplication" onclick="appendToDisplay('*'); playClickSound()">*</button>
+      <button title="dot" onclick="appendToDisplay('.'); playClickSound()">.</button>
+      <button class="numbers" onclick="appendToDisplay('0'); playClickSound()">0</button>
+      <button title="negative or positive" onclick="changeSign(); playClickSound()">(+/-)</button>
+      <button title="plus" onclick="appendToDisplay('+'); playClickSound()">+</button>
+      <button title="square root" onclick="calculateSquareRoot(); playClickSound()">√(x)</button>
+      <button class="dlc" title="delete Last Character" onclick="deleteLastCharacter(); playClickSound()">&#9003;</button>
+      <button title="equal" class="equal" onclick="calculate(); playClickSound()">=</button>
+    </div>
+   
+  </div>
+  <audio id="clickSound">
+    <source src="button-click.mp3" type="audio/mpeg">
+  
+  </audio>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
